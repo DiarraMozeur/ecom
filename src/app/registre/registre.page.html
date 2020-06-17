@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar color="secondary">
+      <ion-buttons slot="start">
+          <ion-back-button defaultHref="/home"></ion-back-button>
+        </ion-buttons>
+    <ion-title>Nouveau utilisateur</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <ion-item>
+      <ion-label position="floating"> Adresse Mail</ion-label>
+      <ion-input type="text" #username></ion-input>
+    </ion-item>
+    <ion-item>
+        <ion-label position="floating"> Mot de passe</ion-label>
+        <ion-input type="password" #password></ion-input>
+      </ion-item>
+  </ion-list>
+  <ion-button expand="block" color="dark"  (click)="registerUser()"solid ><strong>Creer</strong></ion-button>
+
+</ion-content>
